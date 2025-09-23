@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-9%$krjn9+arjalb$!3^!f&za4$==mzbsg(f$e&z-w%h-1xm!wq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['malek-portfolio-ox9k.onrender.com', 'localhost', ]
+ALLOWED_HOSTS = ['malek-portfolio-ox9k.onrender.com', 'localhost', 'ortfolio-boulahdourabdelmalek2190-hhkkvned.leapcell.dev']
 
 
 # Application definition
@@ -128,4 +128,4 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'boulahdourabdelmalek@gmail.com'
 
 CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = ['https://malek-portfolio-ox9k.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://malek-portfolio-ox9k.onrender.com', 'https://ortfolio-boulahdourabdelmalek2190-hhkkvned.leapcell.dev']
