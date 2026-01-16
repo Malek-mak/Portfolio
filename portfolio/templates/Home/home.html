@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+    <meta name="google-site-verification" content="Xkb0D3ocb2QAOWCSx1XLVLEuM9-0w_-XrMnbYPxxQXs" />
 </head>
 <body class="bg-slate-900">
     <header>
@@ -15,13 +15,13 @@
                 <div class="hidden justify-center items-center w-full lg:flex lg:w-auto" id="mobile-menu-2">
                     <ul class="flex justify-center mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
-                            <button class="block py-2 pr-4 pl-3 hover:text-white text-gray-700" type="button" id="about-btn" aria-current="page">About</button>
+                            <button class="block py-2 pr-4 pl-3 hover:text-white text-gray-600" type="button" id="about-btn" aria-current="page">About</button>
                         </li>
                         <li>
-                            <button class="block py-2 pr-4 pl-3 hover:text-white text-gray-700" type="button" id="projects-btn">Projects</button>
+                            <button class="block py-2 pr-4 pl-3 hover:text-white text-gray-600" type="button" id="projects-btn">Projects</button>
                         </li>
                         <li>
-                            <button class="block py-2 pr-4 pl-3 hover:text-white text-gray-700" type="button" id="contact-btn">Contact</button>
+                            <button class="block py-2 pr-4 pl-3 hover:text-white text-gray-600" type="button" id="contact-btn">Contact</button>
                         </li>
                         
                     </ul>
@@ -47,11 +47,29 @@
                 <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Web Developer</h2>
             </div>
         </header>
+        <!-- The About page div -->
+         <div class="sm:hidden py-12 sm:py-2" id="about-dv">
+            <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">About me:</h2>
+            <p class="mt-4 max-w-xs px-4 leading-normal text-md text-slate-200">
+                Hello, I am Malek Boulahdour, a fullstack web developer. I build responsive, user-friendly websites.
+                Let me know if i can help you.
+            </p>
+        </div>
 <!-- The my projects page div -->
-        <div id="projects-dv" style="display: block;">
+        <div id="projects-dv" style="display: block;" class="py-12 sm:py-2">
+            <h2 class="mt-3 px-4 py-2 font-semibold tracking-tight text-slate-200 text-xl">Websites i've built</h2>
+
             <ul class="m-6 justify-self-center items-center">
+                <a href="https://atautomate-boulahdourabdelmalek2190-ft4wvsk3.leapcell.dev/" target="_blank">
+                <li class="p-6 mt-2 m-2 text-center bg-indigo-800 hover:bg-slate-800/50 shadow-xl shadow-black sm:hover:shadow-xl/30 opacity-100 text-white hover:opacity-50  rounded-xl">
+                    <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Automate Fred Data</h2>
+                <p class="m-4 max-w-xs leading-normal text-md text-slate-200 p-4">
+                    Using Fred's public API this website allows users to automate the process of retrieving data from Fred,
+                    and uploads that data to the user's google sheet or send via email.
+                </p></li>
+                </a>
                 <a href="https://jango-arketplace-boulahdourabdelmalek2190-2b25g6gf.leapcell.dev/" target="_blank">
-                <li class="p-6 m-2 text-center bg-indigo-800 hover:bg-slate-800/50 hover:shadow-xl/30 opacity-100 text-white hover:opacity-50  rounded-xl">
+                <li class="p-6 mt-6 m-2 text-center bg-indigo-800 hover:bg-slate-800/50 shadow-xl shadow-black sm:hover:shadow-xl/30 opacity-100 text-white hover:opacity-50  rounded-xl">
                     <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">My Marketplace</h2>
                 <p class="m-4 max-w-xs leading-normal text-md text-slate-200 p-4">
                     This is a Marketplace website with multiple buyers and vendors that i developed, it allows users to register as buyers or vendors, list products, and make purchases.
@@ -59,24 +77,19 @@
                 </p></li>
                 </a>
                 <a href="https://oviesouse-boulahdourabdelmalek2190-svl6jcvp.leapcell.dev/" target="_blank">
-                <li class="p-6 m-2 text-center bg-indigo-800 hover:bg-slate-800/50 hover:shadow-xl/30 opacity-100 text-white hover:opacity-50  rounded-xl">
+                <li class="p-6 mt-6 m-2 text-center bg-indigo-800 hover:bg-slate-800/50 shadow-xl shadow-black sm:hover:shadow-xl/30 opacity-100 text-white hover:opacity-50  rounded-xl">
                     <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Movies House</h2>
                 <p class="m-4 max-w-xs leading-normal text-md text-slate-200 p-4">
                     Movies House, a backend system for a movie reservation service. The service will allow users to sign up, log in, browse movies, reserve seats for specific showtimes, and manage their reservations.
                     The system will feature user authentication, movie and showtime management, seat reservation functionality, and reporting on reservations.
                 </p></li>
                 </a>
+                
             </ul>
         </div>
-<!-- The About page div -->
-         <div style="display: none;" id="about-dv">
-            <p class="mt-4 max-w-xs leading-normal text-md text-slate-200">
-                Hello, I am Malek Boulahdour, a fullstack web developer. I build responsive, user-friendly websites.
-                Let me know if i can help you.
-            </p>
-        </div>
+
 <!-- The Contact me page div -->
-         <div style="display: none;" id="contact-dv">
+         <div class="sm:hidden py-12 sm:py-2" id="contact-dv">
             <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl" >Send me an Email</h2><br>
             <form action="{% url 'home' %}" method="post">
                 {% csrf_token %}
