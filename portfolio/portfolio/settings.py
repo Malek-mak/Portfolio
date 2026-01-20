@@ -132,4 +132,8 @@ DEFAULT_FROM_EMAIL = 'boulahdourabdelmalek@gmail.com'
 CSRF_COOKIE_SECURE = True
 CSRF_TRUSTED_ORIGINS = ['https://malek-portfolio-ox9k.onrender.com', 'https://ortfolio-boulahdourabdelmalek2190-hhkkvned.leapcell.dev']
 
+STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
